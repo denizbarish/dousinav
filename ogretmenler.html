@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="assets/images/dogus-logo.png" type="image/x-icon"/>
+<title>DOUSINAV | Öğretmenler</title>
+
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/plugins/datatable/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="assets/plugins/datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
+<link rel="stylesheet" href="assets/plugins/datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body class="font-muli gradient">
+
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="index.html"><img src="assets/images/dogus-logo.png" /></a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon dark_mode"><i class="fe fe-sun"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="user_div">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#righttab-List">Gözetmen Listeleri</a></li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="righttab-List" role="tabpanel">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">17.11.2024 | 14:00</h3>
+                        <div class="card-options">
+                            <a href="#"><i class="fa fa-file-excel-o" data-toggle="tooltip" title="Excel İndir"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">16.11.2024 | 14:00</h3>
+                        <div class="card-options">
+                            <a href="#"><i class="fa fa-file-excel-o" data-toggle="tooltip" title="Excel İndir"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="left-sidebar" class="sidebar">
+        <h5 class="brand-name">Doğuş Üniversitesi<a href="javascript:void(0)" class="menu_option float-right"></a></h5>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu">
+                        <li><a href="index.html"><i class="fa fa-home"></i><span>Ana Menü</span></a></li>
+                        <li class="active"><a href="ogretmenler.html"><i class="fa fa-black-tie"></i><span>Öğretmenler</span></a></li>
+                        <li><a href="bolumler.html"><i class="fa fa-graduation-cap"></i><span>Bölümler</span></a></li>
+                        <li><a href="derslikler.html"><i class="fa fa-users"></i><span>Derslikler</span></a></li>
+                        <li><a href="subeler.html"><i class="fa fa-folder"></i><span>Şubeler</span></a></li>                   
+                        <li><a href="dersler.html"><i class="fa fa-book"></i><span>Dersler</span></a></li>
+                        <li><a href="gozetmen-listesi.html"><i class="fa fa-address-book"></i><span>Gözetmen Listesi</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="section-body" id="page_top" >
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="notification d-flex">
+                            <div class="dropdown d-flex">
+                                <a style="cursor: pointer;" class="chip ml-3" data-toggle="dropdown">Öğretmen Adı</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="/cikis-yap"><i class="dropdown-icon fe fe-log-out"></i> Çıkış Yap</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="header-action">
+                        <h1 class="page-title">Öğretmenler</h1>
+                    </div>
+                    <ul class="nav nav-tabs page-header-tab">
+                        <li class="nav-item"><a class="nav-link active"data-toggle="tab" href="#ogr-liste">Öğretmenler</a></li>
+                        <li class="nav-item"><a class="nav-link"data-toggle="tab" href="#ogr-ekle">Öğretmen Ekle</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-4">
+            <div class="container-fluid">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="ogr-liste">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover js-basic-example dataTable table-striped table_custom border-style spacing5">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Ad Soyad</th>
+                                                <th>Unvan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>TAYFUN SOY</td>
+                                                <td>Öğr. Gör.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Yusuf KILINÇ</td>
+                                                <td>Öğr. Gör.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="ogr-ekle">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Öğretmen Bilgileri</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="/ogretmen-ekle" method="post">
+                                        <div class="row clearfix">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Ad Soyad</label>
+                                                    <input type="text" name="adsoyad" id="adsoyad" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">    
+                                                    <label>Unvan</label>
+                                                    <input type="text" name="unvan" id="unvan" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                            </div>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            Doğuş Üniversitesi © 2024, Tüm hakları saklıdır.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>    
+</div>
+
+<script src="assets/bundles/lib.vendor.bundle.js"></script>
+<script src="assets/bundles/dataTables.bundle.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/table/datatable.js"></script>
+</body>
+</html>
